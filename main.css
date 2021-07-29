@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 /*==================================
            variables       
 ==================================*/
@@ -15,12 +15,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
 }
 
 section p{
     color:var(--clr-secondary) ;
 }
-
 .button{
     background-color: var(--clr-accent);
     outline:none;
@@ -28,6 +28,7 @@ section p{
     border-radius:.25rem;
     padding:.5em 1em;
     color: white;
+    text-decoration: none;
 }
 
 /*==================================
@@ -37,14 +38,12 @@ section p{
 header{
     min-height:100vh;
 }
-
-header, nav{
+.nav-color{
     background-color: var(--clr-primary);
 }
-.navbar *{
+header{
     background-color: var(--clr-primary);
 }
-
 .colored-heading{
     color: var( --clr-accent);
 }
@@ -117,6 +116,34 @@ header, nav{
 
 }
 
+#available-offer {
+    background-color: var(--clr-primary);
+}
+
+/*==================================
+    footer section       
+==================================*/
+
+footer{
+    position:absolute;
+    font-family: 'Manrope', sans-serif;
+}
+footer ul{
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+footer li{
+    float:left;
+    margin-right: 1em;
+}
+ footer div{
+     margin-bottom: 1em;
+ }
+
+
 
 /*====modal====*/
 
@@ -127,4 +154,10 @@ header, nav{
 
 h5{
     color: var(--clr-accent);
+}
+
+@media (max-width:667px){
+    *{
+        overflow-x:hidden;
+    }
 }
