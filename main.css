@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+/*==================================
+           variables       
+==================================*/
+:root{
+    --clr-primary: rgb(38, 50, 56);
+    --clr-secondary:rgb(105,105,105);
+    --clr-accent:#E76F51;
+}
+
+/*==================================
+           global styles        
+==================================*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section p{
+    color:var(--clr-secondary) ;
+}
+
+.button{
+    background-color: var(--clr-accent);
+    outline:none;
+    border: none;
+    border-radius:.25rem;
+    padding:.5em 1em;
+    color: white;
+}
+
+/*==================================
+           header styles        
+==================================*/
+
+header{
+    min-height:100vh;
+}
+
+header, nav{
+    background-color: var(--clr-primary);
+}
+.navbar *{
+    background-color: var(--clr-primary);
+}
+
+.colored-heading{
+    color: var( --clr-accent);
+}
+
+.hero-split{
+    max-width: 552px;
+}
+
+
+
+/*==================================
+        featured section styles        
+==================================*/
+#featured p{
+    color: var(--clr-accent);
+    font-size: .875rem;
+    font-weight: 600;
+}
+#featured h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.featuredBike{
+    max-width:288px;
+}
+.featuredBike img{
+    width:100%;
+}
+
+.grayImg img{
+    filter:grayscale(100%);
+}
+
+
+/*==================================
+        Clients section styles        
+==================================*/
+
+
+.clientImg img{
+    height: 149px;
+    width: 149px;
+}
+
+#clients h3, h3+p{
+    font-size:.875rem;
+    font-weight:600;
+}
+#clients h3{
+    color:#23A6F0;
+    font-size:.875rem;
+}
+.fa-star{
+    color:var(--clr-accent);
+}
+
+.fa-star-half-alt{
+    color:var(--clr-accent);
+}
+
+/*==================================
+    quistions section       
+==================================*/
+.accordionImg {
+    max-width:430px;
+}
+.accordionImg img{
+    width:100%;
+    max-height:430px;
+
+}
+
+
+/*====modal====*/
+
+.fa-opencart{
+    font-size: 5rem;
+    color:var(--clr-secondary)
+}
+
+h5{
+    color: var(--clr-accent);
+}
