@@ -29,8 +29,18 @@ section p{
     padding:.5em 1em;
     color: white;
     text-decoration: none;
+    transition: all 200ms ease-in-out;
 }
 
+.button:hover{
+    transform: scale(.95);
+}
+
+@media screen and (max-width:720px){
+    h1, h2, h3, h4{
+        overflow-y:hidden;
+    }
+}
 /*==================================
            header styles        
 ==================================*/
@@ -38,9 +48,18 @@ section p{
 header{
     min-height:100vh;
 }
-.nav-color{
-    background-color: var(--clr-primary);
+
+nav li{
+    border-bottom: 2px transparent solid;
+    margin:0 .5rem;
+    padding:0;
 }
+nav li:hover{
+    border-bottom: 2px var(--clr-accent) solid;
+    margin:0 .5rem;
+}
+
+
 header{
     background-color: var(--clr-primary);
 }
@@ -78,6 +97,19 @@ header{
 }
 
 
+/*==================================
+        News section styles        
+==================================*/
+
+.btn-read-more{
+    color: var(--clr-accent);
+    background-color:transparent;
+    border: 2px var(--clr-accent) solid
+}
+.btn-read-more:hover{
+    color:#ffffff;
+    background-color:var(--clr-accent);
+}
 /*==================================
         Clients section styles        
 ==================================*/
